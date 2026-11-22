@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creative Garden Decorating Ideas to Give Your Outdoor Space a Unique Look</title>
+<meta name="description" content="Creative garden decorating ideas for any outdoor space: themes, decorative figures, flowers, pathways, lighting, vertical gardening, seating and organization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --moss: #1e3a2f;
+    --moss-soft: #2f5443;
+    --lichen: #d4dfc2;
+    --bone: #f6f7f1;
+    --marigold: #e9a91f;
+    --ink: #1d2621;
+    --muted: #556158;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.7;
+  }
+
+  /* Full-bleed hero: image behind, headline anchored bottom-left */
+  .hero {
+    position: relative;
+    min-height: min(78vh, 640px);
+    display: flex;
+    align-items: flex-end;
+    background: var(--moss);
+    overflow: hidden;
+  }
+  .hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(30,58,47,0) 25%, rgba(30,58,47,0.92) 100%);
+  }
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    color: #fff;
+  }
+  h1 {
+    font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    line-height: 1.06;
+    margin: 0;
+    max-width: 17ch;
+  }
+  .hero-text::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 6px;
+    background: var(--marigold);
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Two-column body: sticky contents list + article */
+  .layout {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 4rem;
+  }
+  nav.toc {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    font-size: 1rem;
+  }
+  nav.toc p {
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+    color: var(--moss);
+  }
+  nav.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 3px solid var(--lichen);
+  }
+  nav.toc a {
+    display: block;
+    padding: 0.4rem 0 0.4rem 1rem;
+    margin-left: -3px;
+    border-left: 3px solid transparent;
+    color: var(--muted);
+    text-decoration: none;
+    line-height: 1.35;
+  }
+  nav.toc a:hover,
+  nav.toc a:focus-visible {
+    color: var(--moss);
+    border-left-color: var(--marigold);
+    outline: none;
+  }
+
+  .article { max-width: 680px; }
+  .intro {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: var(--moss);
+  }
+  h2 {
+    font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--moss);
+    margin: 3.25rem 0 0.9rem;
+    scroll-margin-top: 1.5rem;
+  }
+  p { margin: 0 0 1.15rem; }
+  a.inline {
+    color: var(--moss-soft);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--marigold);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+  }
+  a.inline:hover { background: var(--lichen); }
+  a:focus-visible {
+    outline: 3px solid var(--marigold);
+    outline-offset: 3px;
+  }
+  .final {
+    margin-top: 3.5rem;
+    padding: 2rem 2rem 1rem;
+    background: var(--moss);
+    color: #eef3e6;
+    border-radius: 6px;
+  }
+  .final h2 { color: #fff; margin-top: 0; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 2rem; }
+    nav.toc { position: static; }
+    nav.toc ul {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      border-left: 0;
+      padding-bottom: 0.5rem;
+    }
+    nav.toc a {
+      white-space: nowrap;
+      margin: 0;
+      padding: 0.45rem 0.9rem;
+      border: 1px solid var(--lichen);
+      border-radius: 999px;
+    }
+    nav.toc a:hover, nav.toc a:focus-visible { border-color: var(--marigold); }
+    .final { padding: 1.5rem 1.25rem 0.5rem; }
+  }
+  @media (max-width: 520px) {
+    body { font-size: 1.0625rem; }
+    h2 { font-size: 1.65rem; }
+    .hero-text { padding-bottom: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Image: blog.png in the same folder as this file -->
+  <img src="blog.png" alt="Decorated garden with colorful flowers, a stone pathway and garden ornaments" width="1600" height="900">
+  <div class="hero-text">
+    <h1>Creative Garden Decorating Ideas to Give Your Outdoor Space a Unique Look</h1>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="In this article">
+    <p>In this article</p>
+    <ul>
+      <li><a href="#theme">Choose a theme</a></li>
+      <li><a href="#figures">Decorative figures</a></li>
+      <li><a href="#flowers">Colorful flowers</a></li>
+      <li><a href="#pathway">Garden pathway</a></li>
+      <li><a href="#lighting">Outdoor lighting</a></li>
+      <li><a href="#vertical">Vertical gardening</a></li>
+      <li><a href="#seating">Seating area</a></li>
+      <li><a href="#organized">Keep it organized</a></li>
+      <li><a href="#final">Final thoughts</a></li>
+    </ul>
+  </nav>
+
+  <article class="article">
+    <p class="intro">A beautiful garden is more than just a collection of flowers and plants. It is a place where creativity, nature, and personal style come together. Whether you have a spacious backyard, a small patio, or a cozy balcony, thoughtful decorations can transform an ordinary outdoor area into a charming and relaxing retreat.</p>
+    <p>From colorful flower arrangements to decorative ornaments, there are countless ways to make your garden more attractive. The best part is that you do not need an expensive makeover to create an inviting outdoor environment. A few carefully selected accessories and creative touches can make a noticeable difference.</p>
+
+    <h2 id="theme">Choose a Theme for Your Garden</h2>
+    <p>Before adding decorations, consider choosing a theme that reflects your personality. A well-planned theme helps create a coordinated appearance and prevents your garden from looking cluttered.</p>
+    <p>Some popular garden styles include rustic, cottage, modern minimalist, tropical, and whimsical designs. For example, a cottage-style garden looks beautiful with wooden accessories, colorful flowers, and vintage-inspired ornaments. Meanwhile, a modern garden may benefit from simple decorations, clean lines, and neutral colors.</p>
+
+    <h2 id="figures">Add Decorative Figures for Extra Personality</h2>
+    <p>Garden ornaments are an easy way to introduce character into an outdoor space. Small statues, animal figures, miniature houses, and decorative characters can make flower beds and pathways more interesting.</p>
+    <p>Whimsical ornaments are particularly popular among homeowners who enjoy creative outdoor displays. For example, <a class="inline" href="https://thegnomeshop.ca/product/faceless-female-doll-mexican-gnomes/" target="_blank" rel="noopener">Faceless Female Doll Mexican Gnomes</a> can complement colorful garden arrangements and add an artistic touch to themed outdoor spaces.</p>
+    <p>When selecting decorative figures, consider their size, material, and color so they blend naturally with the surrounding plants and garden furniture.</p>
+
+    <h2 id="flowers">Use Colorful Flowers to Brighten the Space</h2>
+    <p>Flowers are among the most effective ways to improve the appearance of any garden. Their colors, textures, and natural beauty create an inviting atmosphere throughout the growing season.</p>
+    <p>Consider combining different flower varieties to create visual depth. Petunias, marigolds, daisies, lavender, and geraniums are popular options for colorful outdoor displays.</p>
+    <p>You can also use decorative pots and hanging baskets to introduce flowers at different heights. This technique helps maximize space while making your garden look fuller and more vibrant.</p>
+
+    <h2 id="pathway">Create an Attractive Garden Pathway</h2>
+    <p>A garden pathway adds structure and makes outdoor spaces easier to navigate. It can also become an important decorative feature.</p>
+    <p>Stone pavers, gravel, brick, and wooden stepping stones are all excellent materials for creating attractive pathways. You can line the edges with small plants, solar lights, or decorative stones for a more polished appearance.</p>
+    <p>A winding pathway can make a small garden feel more spacious and encourage visitors to explore different areas.</p>
+
+    <h2 id="lighting">Incorporate Outdoor Lighting</h2>
+    <p>Lighting can completely change the atmosphere of a garden, especially during the evening. Soft lighting creates a relaxing environment and highlights important decorative features.</p>
+    <p>Solar-powered lanterns, string lights, pathway lights, and LED garden ornaments are practical choices. Place them near seating areas, along pathways, or around flower beds to create a balanced lighting arrangement.</p>
+    <p>Warm lighting is particularly suitable for creating a cozy outdoor atmosphere.</p>
+
+    <h2 id="vertical">Make Use of Vertical Gardening</h2>
+    <p>If your garden has limited space, vertical gardening can help you make the most of available areas. Instead of placing everything on the ground, use walls, fences, shelves, and hanging containers.</p>
+    <p>Vertical planters are ideal for growing herbs, small flowers, and decorative greenery. You can also combine different planter styles to create an attractive living wall.</p>
+    <p>This approach works especially well for balconies, small patios, and compact urban gardens.</p>
+
+    <h2 id="seating">Add a Comfortable Seating Area</h2>
+    <p>A garden should be a place where you can relax and enjoy the outdoors. Adding a comfortable seating area makes the space more functional and inviting.</p>
+    <p>Consider a small wooden bench, outdoor chairs, or a compact table with weather-resistant cushions. Surround the seating area with potted plants or flowering shrubs to create a peaceful atmosphere.</p>
+    <p>If you have enough room, a pergola or shade umbrella can provide additional comfort during sunny days.</p>
+
+    <h2 id="organized">Keep Your Garden Organized</h2>
+    <p>Even the most beautiful decorations can lose their appeal when a garden becomes overcrowded. Maintaining a clean and organized outdoor space is essential.</p>
+    <p>Trim overgrown plants, remove dead leaves, clean decorative ornaments, and arrange pots in an orderly way. Make sure pathways remain clear and that larger decorations do not block the view of smaller plants.</p>
+    <p>A balanced garden design allows every decorative element to stand out.</p>
+
+    <section class="final">
+      <h2 id="final">Final Thoughts</h2>
+      <p>Creating a beautiful garden does not require expensive furniture or professional landscaping. With the right combination of flowers, lighting, decorative figures, and comfortable seating, you can turn almost any outdoor area into a welcoming retreat.</p>
+      <p>Focus on choosing decorations that complement your garden’s natural surroundings and reflect your personal taste. By combining creativity with thoughtful organization, you can build an outdoor space that remains attractive, enjoyable, and full of character.</p>
+    </section>
+  </article>
+</div>
+
+</body>
+</html>
